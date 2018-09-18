@@ -67,6 +67,8 @@ class LoadWindData(object):
                                                "roe_avg,roa,grossprofitmargin,netprofitmargin,assetsturn,"
                                                "debttoassets,current,ocftoassets",
                               "unit=1;rptDate="+date+";rptType=1;currencyType=")
+        elif style == 'technical_data':
+            wind_data = w
         else:
             print u'未能识别wind类型'
             return None
